@@ -1,0 +1,82 @@
+.hik-layout-ceiling-main {
+  height: auto;
+  min-width: 1280px;
+}
+
+ .hik-layout-temple(@radius: 70px) {
+  background: #fff;
+  height: @radius;
+  border-bottom: 1px solid #d9d9d9;
+  .hik-layout-wrapper {
+  padding: 0 50px;
+  }
+}
+
+.hik-layout-title {
+  .hik-layout-temple;
+  ul{
+      margin-bottom: 0;
+      padding: 2px 0;
+      list-style: none;
+  }
+  ul>li{
+      float: right;
+      position: relative;
+          background: url('/public/images/sprite-home-20150618.png') no-repeat 0 -168px;
+    width: 106px;
+    padding-left: 6px;
+    margin-left: 5px;
+  }
+  .inner{
+    text-align: center;
+    vertical-align: top;
+  }
+  .number{
+     font: normal normal normal 25px/35px 'Oswald-Regular', sans-serif;
+  }
+}
+.hik-layout-header {
+  .hik-layout-temple(auto);
+}
+
+.hik-layout-logo {
+  font-size: 18px;
+  color: #555;
+  background: #eee;
+  border-radius: 6px;
+  margin: 16px 28px 16px 0;
+}
+.hik-layout-history {
+  border-radius: 6px;
+  margin: 16px 28px 16px 0;
+}
+
+.right {
+  float: right !important;
+}
+
+.hik-layout-ceiling {
+    font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #242736;
+  color: #ddd;
+  ul li {
+  display: inline-block;
+  margin: 0 4px;
+}
+}
+   
+
+.hik-header-form{
+  border-radius: 6px;
+  .row {
+  margin-left: -10px;
+}
+.col-3,.col-18,.col-24{
+  padding: 10px 8px 0px 0px;
+    }
+  .ant-form-item {
+  margin-bottom: 10px;
+}
+}
