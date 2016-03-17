@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import DocumentStore from '../../stores/documentStore';
-import {Row,Col,Table} from 'antd';
+import {Row, Col, Table} from 'antd';
 class ReimbTotal extends Component {
     constructor(props) {
         super(props);
@@ -58,7 +58,9 @@ class ReimbTotal extends Component {
         return this.state.hidden ? (<div></div>) : (
             <Row  type="flex" justify="space-between" align="bottom">
                 <Col span="24">
-                    <Table columns={columns} dataSource={data} pagination={false} />
+                    <div className="hik-table">
+                        <Table columns={columns} dataSource={data} pagination={false} size="small"/>
+                    </div>
                 </Col>
             </Row >
         );

@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
-import ReimbHeader from './reimbHeader';
+
 import HeadBar from './headBar';
-import ReimbTotal from './reimbTotal';
+import {QueueAnim} from 'antd';
 import ReimbTitle from './reimbTitle';
-import {Row,Col,Button} from 'antd';
+import ReimbHeader from './reimbHeader';
+import ReimbTotal from './reimbTotal';
+import ReimbError from './reimbError';
+import ReimbSubsidy from './reimbSubsidy';
+import ReimbToolBar from './reimbToolBar';
+
+import {Row, Col, Button} from 'antd';
 
 class ReimbApp extends Component {
     constructor(props) {
@@ -17,14 +23,19 @@ class ReimbApp extends Component {
                 <ReimbTitle/>
                 <div className ="hik-layout-header">
                     <div className="hik-layout-wrapper">
+                    <QueueAnim  type="bottom" leaveReverse>
                         <ReimbHeader />
                         <ReimbTotal />
+                        <ReimbError />
+                        <ReimbSubsidy />
+                        </QueueAnim>
                     </div>
-                    <Row>
-                        <Col span="4" offset="20">
-                            <Button type="ghost" >补贴</Button>
-                        </Col>
-                    </Row>
+
+                </div>
+                <div className ="hik-layout-header">
+                    <div className="hik-layout-wrapper">
+                        <ReimbToolBar />
+                    </div>
                 </div>
             </div>
         );

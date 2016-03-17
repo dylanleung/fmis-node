@@ -1,6 +1,11 @@
 .hik-layout-ceiling-main {
   height: auto;
   min-width: 1280px;
+  
+   ul li {
+  display: inline-block;
+  margin: 0 4px;
+}
 }
 
  .hik-layout-temple(@radius: 70px) {
@@ -10,6 +15,7 @@
   .hik-layout-wrapper {
   padding: 0 50px;
   }
+  
 }
 
 .hik-layout-title {
@@ -55,16 +61,17 @@
   float: right !important;
 }
 
+.left {
+  float: left !important;
+}
+
 .hik-layout-ceiling {
     font-size: 12px;
   height: 30px;
   line-height: 30px;
   background-color: #242736;
   color: #ddd;
-  ul li {
-  display: inline-block;
-  margin: 0 4px;
-}
+ 
 }
    
 
@@ -73,10 +80,19 @@
   .row {
   margin-left: -10px;
 }
-.col-3,.col-18,.col-24{
+.col-3,.col-4,.col-17,.col-24{
   padding: 10px 8px 0px 0px;
     }
   .ant-form-item {
   margin-bottom: 10px;
 }
 }
+
+
+.hik-button{
+      padding: 5px 8px 5px 0px;
+  }
+  
+ .hik-table{
+      padding: 8px 0px 8px 0px;
+  }

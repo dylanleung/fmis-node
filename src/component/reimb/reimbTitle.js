@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import { Row, Col, Button } from 'antd';
 import History from './history';
 import DocumentAction from '../../actions/documentAction';
-
+/**
+ * 报销标题
+ */
 class reimbTitle extends Component {
     constructor(props) {
         super(props);

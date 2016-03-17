@@ -27,7 +27,7 @@ export default Reflux.createStore({
         const showTotal = !!this.docStatus.showTotal;
         const showSubsidy = !!this.docStatus.showSubsidy;
         _.assign(this.docStatus, { showHeader: status === 'header' ? !showHeader : false, showError: status === 'error' ? !showError : false, showTotal: status == 'total' ? !showTotal : false, showSubsidy: status === 'subsidy' ? !showSubsidy : false });
-       localStorage.setItem(localStorageKey, JSON.stringify(this.docStatus));
+        localStorage.setItem(localStorageKey, JSON.stringify(this.docStatus));
     },
 
     docStatus: {

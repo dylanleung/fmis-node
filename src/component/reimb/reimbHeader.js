@@ -74,12 +74,12 @@ class ReimBHeader extends Component {
             </Col>) :
             (<Col span="3"> </Col>);
 
-        return this.state.hidden ? (<div></div>) : (
+        return this.state.hidden ? null: (
             <Row  type="flex" justify="space-between" align="bottom">
                 <Col span="24">
                     <Form horizontal className="hik-header-form">
                         <Row>
-                            <Col span="3">
+                            <Col span="4">
                                 <FormItem labelCol= {{ span: 10 }}
                                     wrapperCol= {{ span: 14 }}
                                     label="差旅类型:" >
@@ -89,7 +89,7 @@ class ReimBHeader extends Component {
                                 </FormItem>
                             </Col>
                             {snackNode}
-                            <Col span="18">
+                            <Col span="17">
                                 <FormItem
                                     label="报销用户:"
                                     labelCol= {{ span: 2 }}
